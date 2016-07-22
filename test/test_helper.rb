@@ -5,10 +5,6 @@ require 'capybara'
 require 'capybara/dsl'
 class ActionDispatch::IntegrationTest
   include Capybara::DSL
-  def teardown
-    Capybara.reset_sessions!
-    Capybara.use_default_driver
-  end
 end
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.

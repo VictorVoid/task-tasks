@@ -8,6 +8,8 @@ gem 'turbolinks'
 
 group :test do
   gem 'capybara'
+  #gem 'test-unit'
+  #gem 'manitest-reporters'
 end
 
 group :development, :test do

@@ -2,6 +2,7 @@ ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'capybara'
+require 'capybara/rails'
 require 'capybara/dsl'
 class ActionDispatch::IntegrationTest
   include Capybara::DSL

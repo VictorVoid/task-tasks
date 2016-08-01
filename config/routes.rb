@@ -10,6 +10,11 @@ Rails.application.routes.draw do
 	# controller => classe => LoginController
 	# action => método => new
 	# LoginController#new 
+
 	root to: "login#new", via: :get
-   	get "/signup", to: "signup#new"
+
+	get "/login", to: "login#new"
+
+ 	get "/signup", to: "signup#new"
+ 	post "/signup", to: "signup#create"
 end

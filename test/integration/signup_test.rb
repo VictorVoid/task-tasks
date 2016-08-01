@@ -15,5 +15,4 @@ class SignupTest < ActionDispatch::IntegrationTest
     assert_equal current_path, "/login" #espera que eles sao iguais
     assert page.has_content?("Cadastrado realizado com sucesso!") #espera que o valor seja verdadeiro
     end
-  test "sign up with invalid data"
 end

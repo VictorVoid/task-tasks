@@ -14,6 +14,7 @@ end
 
 group :development, :test do
   gem 'byebug'
+  gem 'pry-meta'
 end
 
 group :development do

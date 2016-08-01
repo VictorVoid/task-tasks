@@ -1,1 +1,28 @@
 <h1> Signup </h1>
+
+<%=	form_for @user, url: "/signup" do |f| %>
+	<p>
+		<%= f.label :name, "Seu nome" %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :email, "Seu e-mail" %>
+		<%= f.email_field :email %>
+	</p>
+	<p>
+		<%= f.label :login, "Seu login" %>
+		<%= f.text_field :login %>
+	</p>
+	<p>
+		<%= f.label :password, "Sua senha" %>
+		<%= f.password_field :password %>
+	</p>
+	<p>
+		<%= f.label :password_confirmation, "Confirme sua senha" %>
+		<%= f.password_field :password_confirmation %>
+	</p>
+
+	<p>
+		<%= f.submit "Quero me cadastrar" %>
+	</p>
+<% end %>

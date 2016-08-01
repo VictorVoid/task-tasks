@@ -10,9 +10,8 @@ class SignupTest < ActionDispatch::IntegrationTest
     fill_in "Sua senha", with: "test"
     fill_in "Confirme sua senha", with: "test"
     click_button "Quero me cadastrar"
-
   ## espero que aconteca
-    assert_equal current_path, "/login" #espera que eles sao iguais
+    assert_equal "/login", current_path #espera que eles sao iguais
     assert page.has_content?("Cadastrado realizado com sucesso!") #espera que o valor seja verdadeiro
     end
 end

@@ -5,7 +5,7 @@ gem 'rails', '4.2.6'
 gem 'mysql2', '>= 0.3.13', '< 0.5'
 gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks'
-
+gem 'rails-i18n'
 group :test do
   gem 'capybara'
   #gem 'test-unit'

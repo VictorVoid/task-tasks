@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>TaskTasks</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <title>TaskTasks</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 </head>
+
 <body>
-<%= flash.notice %>
+    <%= flash.notice %>
+    <%= link_to t("menu.signup"), "/signup" %>
 
-<%= link_to "Quero me cadastrar", "/signup" %>
-
-<%= yield %>
+    <%= yield %>
 
 </body>
+
 </html>

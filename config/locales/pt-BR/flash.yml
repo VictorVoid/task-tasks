@@ -1,0 +1,4 @@
+flash:
+  signup:
+    create:
+      notice: "Cadastrado realizado com sucesso!"

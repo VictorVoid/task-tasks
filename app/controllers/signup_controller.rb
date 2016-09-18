@@ -7,7 +7,7 @@ class SignupController < ApplicationController
       #salvar no bd
     	@user = User.new(user_params)
       if @user.save
-        flash.notice = "Cadastrado realizado com sucesso! 1"
+        flash.notice = t("flash.signup.create.notice")
         redirect_to "/login"
       else
         render :new

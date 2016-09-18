@@ -9,6 +9,21 @@ module IntegrationHelpers
   def t(*args) #0..infinito
     I18n.t(*args)
   end
+
+  def label(scope)
+    t(scope, scope: "labels")
+  end
+
+  def create_button(model)
+    t("helpers.submit.#{model}.create")
+  end
+
+  def assert_form_error_message
+    assert page.has_content?(t("form.error_message")) #espera que o valor seja verdadeiro
+  end
+  def assert_notice_message(scope)
+    assert page.has_content?(t("flash.#{scope}.notice"))
+  end
 end
 class ActionDispatch::IntegrationTest
   include Capybara::DSL

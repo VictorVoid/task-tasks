@@ -32,6 +32,7 @@ class UserTest < ActiveSupport::TestCase
     assert user.errors[:password_confirmation].any? #tem algum erro na chave password_confirmation ? precisa ter!
   end
 
+
   %w[
     john@example.org
     john@example.me

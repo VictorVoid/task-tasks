@@ -24,6 +24,9 @@ module IntegrationHelpers
   def assert_notice_message(scope)
     assert page.has_content?(t("flash.#{scope}.notice"))
   end
+  def assert_alert_message(scope)
+    assert page.has_content?(t("flash.#{scope}.alert"))
+  end
 end
 class ActionDispatch::IntegrationTest
   include Capybara::DSL

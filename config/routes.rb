@@ -1,3 +1,4 @@
+# coding: utf-8
 Rails.application.routes.draw do
     #get 'login/new'
 	
@@ -14,7 +15,9 @@ Rails.application.routes.draw do
 	root to: "login#new", via: :get
 
 	get "/login", to: "login#new"
-
+  post "/login", to: "login#create"
  	get "/signup", to: "signup#new"
  	post "/signup", to: "signup#create"
+
+  get "/task", to: "task#index"
 end

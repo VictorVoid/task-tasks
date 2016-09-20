@@ -9,11 +9,18 @@
 </head>
 
 <body>
-    <%= flash.notice %>
+    <% for type, message in flash %>
+        <p class="<%= type %> message">
+            <%= message %>
+        </p>
+    <% end %>
     <%= link_to t("menu.signup"), "/signup" %>
+    <%= link_to t("menu.login"), "/login" %>
 
+    <% if logged_in?  %>
+       Olá, <%= current_user.name %>
+    <% end %>
     <%= yield %>
-
 </body>
 
 </html>
